@@ -1,0 +1,83 @@
+header{
+     height : 100vh;
+     padding-top:1rem;
+     overflow:hidden;
+}
+
+.header__container{
+    text-align:center;
+    height:100%;
+    position: relative;
+    
+}
+
+/* ===========CTA============== */
+
+.cta{
+    margin-top:2.5rem;
+    display:flex;
+    gap:1.2rem;
+    justify-content:center;
+}
+
+/* ============SOCIAL__SOCIAL============== */
+
+.header__socials{
+    display:flex;
+    margin-top:5rem;
+    flex-direction:column;
+    align-items: center;
+    gap:0.8rem;
+    position:absolute;
+    left:0;
+}
+
+.header__socials::after{
+    content:"";
+    width:1px;
+    height:2rem;
+    background: var(--color-primary);
+}
+
+.me{
+    width:70%;
+    height:80%;
+    position:absolute;
+    left :10%;
+    border-radius:70%;
+    overflow:hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin-top:1rem;
+
+}
+
+.scroll__down{
+    display:flex;
+    margin-top:8.2rem;
+    position:absolute;
+    left:80%;
+    transform:rotate(90deg);
+    text-align: center;
+}
+
+
+/* ================MEDIA QUERY(SMALL DEVICES)================= */
+@media screen and(max-width:1024 px){
+
+    .header{
+            height: 68vh;
+    }
+
+
+}
+
+/* ================MEDIA QUERY(MEDIUM DEVICES)================= */
+@media screen and(max-width:600 px){
+.header{
+    height: 100vh;
+}
+    .header__socials,
+    .scroll__down{
+        display :none important;
+    }
+}
