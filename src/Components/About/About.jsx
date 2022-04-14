@@ -1,8 +1,16 @@
 import React from 'react'
 import './About.css'
+import Card from './Card'
 const About = () => {
-  return (
-    <div>About</div>
+  return (<><Card/>
+  
+  </>
+    
+    
+    
+
+
+
   )
 }
 

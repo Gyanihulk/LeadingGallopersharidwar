@@ -10,11 +10,14 @@ import Services from './Components/Services/Services'
 import Testimonals from './Components/Testimonial/Testimonial'
 
 
+
 const App = () => {
   return (
     <>
-    <Header/>
     <Nav/>
+    <Header/>
+   
+    
     <About/>
     <Experience/>
     <Services/>
